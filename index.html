@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title>APR Bullion</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<!--  Needs to be updated before publishing  End -->
+	
+	<!-- Jquery Mobile JS and CSS -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.theme-1.3.2.min.css" />
+	<link rel="shortcut icon" 	type="image/x-icon" href="/favicon.ico" >
+	<link rel="icon" 					type="image/x-icon" href="/favicon.ico" >
+	
+	
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>
+	
+	
+	<!-- Custom JS and css -->
+	<link rel="stylesheet" href="css/aprPGGetMobileRates.css?ts=20140609151519" />
+	<!-- <link rel='stylesheet' type='text/css' href='css/rupee.css'></link> -->
+	<script src="js/aprPGGetMobileRates.js?ts=20140609151519"></script>
+
+	
+</head> 
+<body onload="initAPRMobileApp();">
+	<input type="hidden" id="id_hid_mob_param1" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param2" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param3" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param4" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param5" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param6" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param7" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param8" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param9" 		value="0" />
+	<input type="hidden" id="id_hid_mob_param10" 		value="0" />
+	
+	
+<div data-role="page" id="mainpage" data-theme="a"   class="cl_div_content">
+
+
+	<div data-role="header" data-theme="a" style='height: 50px;'>
+		<div>
+			<!-- <a data-rel="back" >Exit</a> -->
+			<table style="width: 100%" >
+			<tr>
+				<td width=40%>
+				<img src="images/apr_logo.png"   />
+				</td>
+				<td width=60%>
+				<!-- <h4>APR Bullion</h4> -->
+				<span style="text-align: center;">APR Bullion</span>
+				</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	<div data-role="content">	
+	
+		<div class="ui-grid-a cl_td_grid" id="id_div_grid_outer">
+			<!-- Default it to No Steaming -->
+			<div class='cl_stream_off' >Data Streaming is <span style='color:#E35E1B'>off... </span> </div>
+
+		</div>
+
+	   <a href="#popup" id="id_btn_updateapp" data-role="button" data-rel="dialog" data-transition="pop" data-theme="a">
+			Update App
+		</a>
+		
+	   <script>
+			//$('#id_btn_updateapp').buttonMarkup({ inline: true });
+			$('#id_btn_updateapp').css("display", "none");
+	   </script>
+	   
+
+	   
+   
+	</div><!-- /content -->
+
+	
+	
+	<div data-role="footer" data-position="fixed" data-theme="a">
+	<h1>
+	   <div class="cl_divPoweredBy">
+			<span style="color:#33FC21;">Powered by</span> 
+			<span style="color:#FAFF69;">magic</span><span style="color:#33FC21;">Bul</span>   
+	   </div>
+</h1>	   
+	</div><!-- /Footer -->
+
+	
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="popup">
+
+	<div data-role="header" data-theme="e">
+		<h1>Update App</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="d">	
+		<p> Dear Customer, Please update latest version of this App from Store to enjoy new features. </p>
+		<p><a href="#mainpage" data-rel="back" data-role="button" data-inline="true" data-icon="arrow-l">Back</a></p>	
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>Thank You</h4>
+	</div><!-- /footer -->
+</div><!-- /page popup -->
+
+</body>
+</html>
